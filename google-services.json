@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965991934091",
+    "project_id": "aprendeprogramar-695d5",
+    "storage_bucket": "aprendeprogramar-695d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965991934091:android:2d2eba19d1204c4ae74c8e",
+        "android_client_info": {
+          "package_name": "com.playconsole.aprendeprogramar2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqgEcDOSNoVYzD_mMND9fxTIo9jBjCV1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
