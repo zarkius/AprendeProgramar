@@ -1,30 +1,16 @@
-package com.playconsole.aprendeprogramar2;
+package com.playconsole.aprendeprogramar;
 
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+    // Missing closing brace here!
+
+    int myVariable = 10; // This is outside of a method, but inside the class
+
+    protected void onCreate(Bundle savedInstanceState) { // Error here!
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        // Obtain the FirebaseAnalytics instance.
-        FirebaseAnalytics.getInstance(this);
-
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        // ... rest of your code ...
     }
 }
-

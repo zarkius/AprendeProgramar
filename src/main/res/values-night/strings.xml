@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="texto1">Redireccion Pendiente</string>
+    <string name="texto1" translatable="false">Redireccion Pendiente</string>
 </resources>
