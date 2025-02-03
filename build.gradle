@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace 'com.playconsole.aprendeprogramar2'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.playconsole.aprendeprogramar2"
@@ -32,6 +32,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -45,6 +48,8 @@ dependencies {
     implementation libs.play.services.ads
     implementation libs.firebase.config
     implementation libs.play.services.ads.lite
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

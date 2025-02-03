@@ -8,10 +8,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AprendeProgramar">
+        <activity
+            android:name="com.playconsole.aprendeprogramar.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AprendeProgramar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <property
             android:name="android.adservices.AD_SERVICES_CONFIG"
             android:resource="@xml/ga_ad_services_config"
             tools:replace="android:resource" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,6 +34,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>
