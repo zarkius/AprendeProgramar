@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">aprendeprogramar2</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="texto1">Redireccion Pendiente...</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

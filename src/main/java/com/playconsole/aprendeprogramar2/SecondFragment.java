@@ -1,6 +1,4 @@
-package com.playconsole.aprendeprogramar;
-
-import static android.os.Build.VERSION_CODES.R;
+package com.playconsole.aprendeprogramar2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -33,7 +31,7 @@ public class SecondFragment extends Fragment {
 
         binding.buttonSecond.setOnClickListener(v ->
                 NavHostFragment.findNavController(SecondFragment.this)
-
+                        .navigate(R.id.action_SecondFragment_to_FirstFragment)
         );
     }
 

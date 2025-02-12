@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="AprendeProgramar">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-02-02T23:09:17.518769300Z">
+        <DropdownSelection timestamp="2025-02-03T01:07:18.701150600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="PhysicalDevice" identifier="serial=10HE5HFQHE00003" />
@@ -13,6 +13,11 @@
         </DropdownSelection>
         <DialogSelection>
           <targets>
+            <Target type="DEFAULT_BOOT">
+              <handle>
+                <DeviceId pluginId="PhysicalDevice" identifier="serial=10HE5HFQHE00003" />
+              </handle>
+            </Target>
             <Target type="DEFAULT_BOOT">
               <handle>
                 <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\diego\.android\avd\Medium_Phone.avd" />

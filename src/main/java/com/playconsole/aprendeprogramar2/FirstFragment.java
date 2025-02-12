@@ -1,6 +1,4 @@
-package com.playconsole.aprendeprogramar;
-
-import static android.os.Build.VERSION_CODES.R;
+package com.playconsole.aprendeprogramar2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,8 +19,7 @@ public class FirstFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
-    )
-    {
+    ) {
 
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         return binding.getRoot();
@@ -32,10 +29,9 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(v -> {
-                    NavHostFragment.findNavController(FirstFragment.this)
-                            .navigate(R);
-                }
+        binding.buttonFirst.setOnClickListener(v ->
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment)
         );
     }
 
