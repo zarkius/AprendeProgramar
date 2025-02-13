@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.graphics:graphics-path:1.1.0") // Or the latest version
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
