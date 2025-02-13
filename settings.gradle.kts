@@ -20,4 +20,3 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AprendeProgramar"
-include(":aprendeprogramar")
