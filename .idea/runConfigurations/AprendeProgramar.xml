@@ -1,13 +1,13 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="AprendeProgramar" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-    <module name="AprendeProgramar" />
+    <module name="StudioProjects.AprendeProgramar" />
     <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
     <option name="DEPLOY" value="true" />
     <option name="DEPLOY_APK_FROM_BUNDLE" value="true" />
     <option name="DEPLOY_AS_INSTANT" value="false" />
     <option name="ARTIFACT_NAME" value="" />
     <option name="PM_INSTALL_OPTIONS" value="" />
-    <option name="ALL_USERS" value="false" />
+    <option name="ALL_USERS" value="true" />
     <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
     <option name="ALLOW_ASSUME_VERIFIED" value="false" />
     <option name="CLEAR_APP_STORAGE" value="false" />
