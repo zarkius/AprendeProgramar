@@ -14,11 +14,7 @@ plugins {
 
 android {
     signingConfigs {
-        debug {
-            storeFile file(buildToolsVersion)
-            storePassword buildToolsVersion
-            keyAlias buildToolsVersion
-            keyPassword buildToolsVersion
+        release {
         }
     }
     namespace 'com.playconsole.aprendeprogramar2'
@@ -26,7 +22,6 @@ android {
     defaultConfig {
         applicationId "com.playconsole.aprendeprogramar2"
         minSdk 33
-        targetSdk 34
         versionCode 2
         versionName '2.0'
 
