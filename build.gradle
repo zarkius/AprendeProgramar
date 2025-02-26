@@ -41,8 +41,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     buildFeatures {
         viewBinding true
@@ -50,6 +50,9 @@ android {
     }
     compileSdk 35
     buildToolsVersion buildToolsVersion
+    kotlinOptions {
+        jvmTarget = '11'
+    }
 }
 
 dependencies {
@@ -67,6 +70,9 @@ dependencies {
     implementation libs.ui
     implementation libs.ui.graphics
     implementation libs.ui.tooling.preview
+    implementation libs.appcompat
+    implementation libs.navigation.fragment.ktx
+    implementation libs.navigation.ui.ktx
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

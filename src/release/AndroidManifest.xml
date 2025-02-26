@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+
+
+    <meta-data
+        android:name="com.google.android.gms.ads.ca-app-pub-1801340051704618~6961039959"
+        android:value="ca-app-pub-1801340051704618~6961039959"/>
+</application>
+</manifest>
