@@ -1,7 +1,5 @@
 buildscript {
-    ext {
-        buildToolsVersion = 35
-    }
+
 }
 plugins {
     alias(libs.plugins.android.application)
@@ -31,8 +29,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
@@ -44,21 +40,21 @@ android {
         compose true
     }
     compileSdk 35
-    buildToolsVersion buildToolsVersion
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
     kotlinOptions {
         jvmTarget = '11'
     }
 }
 
 dependencies {
-
-    implementation libs.material
     implementation libs.constraintlayout
     implementation libs.firebase.analytics
     implementation libs.firebase.crashlytics
     implementation libs.play.services.ads
     implementation libs.firebase.config
-    implementation libs.navigation.fragment
     implementation libs.navigation.ui
     implementation libs.lifecycle.runtime.ktx
     implementation platform(libs.compose.bom)
@@ -66,11 +62,11 @@ dependencies {
     implementation libs.ui.graphics
     implementation libs.ui.tooling.preview
     implementation libs.appcompat
-    implementation libs.navigation.fragment.ktx
-    implementation libs.navigation.ui.ktx
-    testImplementation libs.junit
-    androidTestImplementation libs.ext.junit
-    androidTestImplementation libs.espresso.core
+    implementation libs.navigation.ui
+    implementation libs.activity.compose
+    implementation libs.material3
+    androidTestImplementation platform(libs.compose.bom)
+    androidTestImplementation libs.ui.test.junit4
     debugImplementation libs.ui.tooling
     debugImplementation libs.ui.test.manifest
 }
